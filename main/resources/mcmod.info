@@ -1,0 +1,16 @@
+[
+{
+  "modid": "mcrealism",
+  "name": "The Minecraft Realism Mod",
+  "description": "A mod that makes minecraft more realistic removing hostile mobs and a bit more logic to minecraft",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["John_Willikers"],
+  "credits": "John_Willikers for making the mod and the MineZ Texture pack Creator for the Bandage Texture.",
+  "logoFile": "/mcrealism.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
