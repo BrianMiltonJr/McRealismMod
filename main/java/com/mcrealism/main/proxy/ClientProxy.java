@@ -6,6 +6,7 @@ import com.mcrealism.main.init.McRealismItems;
 public class ClientProxy extends CommonProxy {
 	@Override
 	public void registerRenders() {
+		// Registers Block and Item Renders
 		McRealismBlocks.registerRenders();
 		McRealismItems.registerRenders();
 	}

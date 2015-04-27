@@ -10,7 +10,8 @@ public class RealismTab extends CreativeTabs {
 	public RealismTab(String label) {
 		super(label);
 	}
-
+	
+	// Tab Icon
 	@Override
 	public Item getTabIconItem() {
 		return McRealismItems.bandage;

@@ -15,15 +15,19 @@ import com.mcrealism.main.blocks.CampFire;
 
 public class McRealismBlocks {
 	
+	// Creating Variable Type for Blocks.
 	public static Block camp_fire;
 	
 	public static void init() {
-		camp_fire = new CampFire(Material.wood).setUnlocalizedName("camp_fire");
+		// Adds unlocalized Name plus material to Block
+		camp_fire = new CampFire(Material.wood).setUnlocalizedName("camp_fire").setCreativeTab(Main.tabRealism);
 	}
 	
 	public static void register() {
+		// Registers Block
 		GameRegistry.registerBlock(camp_fire, camp_fire.getUnlocalizedName().substring(5));
 		
+		// Recipes for Blocks
 		GameRegistry.addRecipe(new ItemStack(camp_fire), 
 				"CCC",
 				"CCC",
@@ -32,10 +36,12 @@ public class McRealismBlocks {
 	}
 	
 	public static void registerRenders() {
+		// Register Render in Game
 		registerRender(camp_fire);
 	}
 	
 	public static void registerRender(Block block) {
+		// Tells where the Mode Resource is
 		Item item = Item.getItemFromBlock(block);
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Main.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
 		
