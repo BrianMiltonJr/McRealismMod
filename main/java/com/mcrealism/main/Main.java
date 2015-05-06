@@ -1,5 +1,7 @@
 package com.mcrealism.main;
 
+import net.minecraft.item.ItemArmor;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -19,6 +21,9 @@ public class Main {
 	public static final String VERSION = "0.0.1";
 	public static final String CLIENT_PROXY_CLASS = "com.mcrealism.main.proxy.ClientProxy";
 	public static final String SERVER_PROXY_CLASS = "com.mcrealism.main.proxy.CommonProxy";
+	
+	// Adds Cloth Material for Cloth Armor
+	public static ItemArmor.ArmorMaterial CLOTH = EnumHelper.addArmorMaterial("CLOTH", "cloth", 47, new int[]{2,4,2,1}, 28);
 	
 	// Tells which proxies to use on Client and Sever Side
 	@SidedProxy(clientSide = Main.CLIENT_PROXY_CLASS, serverSide = Main.SERVER_PROXY_CLASS)

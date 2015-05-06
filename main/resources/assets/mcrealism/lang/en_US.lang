@@ -1,5 +1,9 @@
 item.bandage.name=Bandage
 item.cloth.name=Cloth
 item.powder.name=Powder
+item.bowl.name=Iron Bowl
+item.shavings.name=Wood Shavings
+item.utility_knife.name=Utility Knife
 tile.camp_fire.name=Camp Fire
+tile.camp_fire_cook.name=Cooking Fire
 itemGroup.tabRealism=Realism Mod
